@@ -1,0 +1,58 @@
+<!--
+<nav class="navbar">
+  
+  <div class="container">
+    <div class="namePage">
+      <a [routerLink]="['/']">
+        <h5>INMOBILIARIA</h5>
+        <h1>FANGIO</h1>
+      </a>
+    </div>
+  
+    <div class="options">
+      <a [routerLink]="['/']"><strong>INICIO</strong></a>
+      <a [routerLink]="['/ventas']"><strong>VENTAS</strong></a>
+      <a [routerLink]="['/alquileres']"><strong>ALQUILERES</strong></a>
+      <a [routerLink]="['/nosotros']"><strong>NOSOTROS</strong></a>
+    </div>
+  
+    <button (click)="mostrarTexto()" type="button" class="btn btn-light botonMenu"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+-->
+
+
+<nav class="navbar navbar-expand-md">
+  <div class="container justify-content-between">
+    <div class="namePage">
+      <a [routerLink]="['/']">
+        <h5>INMOBILIARIA</h5>
+        <h1>FANGIO</h1>
+      </a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=""><i class="fas fa-bars"></i></span>
+    </button>
+    <!--Div que se muestra en formatos chicos-->
+    <div class="collapse navbar-collapse justify-content-end">
+      <div class="navbar-nav text-center justify-content-end">
+        <a class="nav-link active" [routerLink]="['/']">INICIO</a>
+        <a class="nav-link" [routerLink]="['/ventas']">VENTAS</a>
+        <a class="nav-link" [routerLink]="['/alquileres']">ALQUILERES</a>
+        <a class="nav-link" [routerLink]="['/nosotros']">NOSOTROS</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--Div que se muestra en formatos grandes-->
+<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" style="background-color: #0054ff;">
+  <div class="navbar-nav text-center justify-content-end">
+    <a class="nav-link active" [routerLink]="['/']">INICIO</a>
+    <a class="nav-link" [routerLink]="['/ventas']">VENTAS</a>
+    <a class="nav-link" [routerLink]="['/alquileres']">ALQUILERES</a>
+    <a class="nav-link" [routerLink]="['/nosotros']">NOSOTROS</a>
+  </div>
+</div>
+

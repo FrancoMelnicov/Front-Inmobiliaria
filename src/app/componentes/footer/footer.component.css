@@ -1,0 +1,84 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color:  #000FFF;
+    color: white;
+    align-items: flex-start;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.redes, .contacto {
+    position: relative;
+    width: 40%;
+    margin-top: 30px;
+}
+
+.redesIconos {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.redes i {
+    text-align: center;
+    font-size: 50px;
+    margin: 30px 30px;
+}
+
+.contacto i {
+    position: relative;
+    top: 5px;
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+/*EXTRA PEQUEÑO*/
+@media (max-width: 575px) {
+    .redes, .contacto{
+        width: 100%;
+    }
+}
+
+/*PEQUEÑO*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .redes, .contacto {
+        width: 100%;
+    }
+
+    .contacto{
+        text-align: center;
+    }
+}
+
+/*MEDIANO*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .redes, .contacto {
+        width: 50%;
+    }
+    .redes {
+        top: -30px;
+    }
+}
+
+/*GRANDE*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .redes {
+        top: -30px;
+    }
+}
+
+/*EXTRA GRANDE*/
+@media (min-width: 1200px){
+    .redes {
+        top: -30px;
+    }
+}

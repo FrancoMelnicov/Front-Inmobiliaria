@@ -1,0 +1,24 @@
+/*EXTRA PEQUEÑO*/
+@media (max-width: 575px) {
+
+}
+
+/*PEQUEÑO*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/*MEDIANO*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*GRANDE*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*EXTRA GRANDE*/
+@media (max-width: 1200px) {
+
+}

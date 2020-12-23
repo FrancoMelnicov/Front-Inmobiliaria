@@ -1,0 +1,121 @@
+
+.presentacion {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../../../assets/images/es-un-suicidio-financiero-por-que-no-deberias-comprar-una-casa-segun-altucher.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.presentacion p{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    margin: 100px;
+}
+
+.filtrador {
+    border-radius: 10px;
+    margin: 20px 0px;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+}
+
+.filtrador form {
+    margin: 30px 0px 0px 0px;
+}
+
+.filtrador h2 {
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.propiedades {
+    background-color: white;
+    margin: 30px 0px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.propiedades h2 {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    padding: 10px 0px 20px 0px;
+    margin: 0px 0px 30px 0px;
+}
+
+.propiedades a {
+    text-decoration: none;
+    color: black;
+}
+
+.propiedad {
+    padding: 0px;
+    background-color: rgb(241, 240, 240);
+}
+
+.propiedad:hover{
+    background-color: rgb(228, 228, 228);
+    transition: 0.5s;
+}
+
+.propiedad img {
+    width: 100%;
+}
+
+.detalle {
+    padding: 0px 10px;
+}
+
+.detalle h3{
+    margin: 10px 0px 10px 0px;
+}
+
+.detalle p {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+/*EXTRA PEQUEÑO*/
+@media (max-width: 575px) {
+    .presentacion p {
+        margin: 30px;
+        font-size: 50px;
+    }
+}
+
+/*PEQUEÑO*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .presentacion p {
+        margin: 50px;
+        font-size: 100px;
+    }
+
+    .propiedad {
+        margin: 5px 0px;
+    }
+}
+
+/*MEDIANO*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*GRANDE*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*EXTRA GRANDE*/
+@media (max-width: 1200px) {
+
+}

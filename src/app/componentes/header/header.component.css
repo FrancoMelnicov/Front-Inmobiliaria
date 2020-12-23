@@ -1,0 +1,110 @@
+.navbar {
+    background-color: #000FFF;
+}
+
+a, span {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h5 {
+    text-align: center;
+    margin: 0px;
+    position: relative;
+}
+
+h1 {
+    top: -5px;
+    letter-spacing: 3px;
+}
+
+h5 {
+    top: 5px;
+    letter-spacing: 2px;
+}
+
+span i {
+    font-size: 40px;
+}
+
+/*
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000FFF;
+}
+
+h1, h5 {
+    text-align: center;
+    margin: 0px;
+    position: relative;
+}
+
+h1 {
+    top: -5px;
+    letter-spacing: 3px;
+}
+
+h5 {
+    top: 5px;
+    letter-spacing: 2px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.options a{
+    margin: 0px 15px;
+}
+
+.namePage a, .options a {
+    color: white;
+    text-decoration: none;
+}
+
+.botonMenu {
+    display: none;
+    color: blue;
+}
+
+.botonMenu i {
+    font-size: 40px;
+}
+
+
+@media (max-width: 575px) {
+    .options {
+        display: none;
+    }
+
+    .botonMenu {
+        display: block;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .options {
+        display: none;
+    }
+
+    .botonMenu {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+}
+*/

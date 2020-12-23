@@ -1,0 +1,52 @@
+<div class="presentacion">
+    <div class="container">
+      <p>ALQUILERES</p>
+   <div class="filtrador">
+    <h2>Buscar Propiedades</h2>
+    <form>
+        <div class="form-row align-items-center justify-content-center">
+          <div class="form-group col-md-3">
+            <label for="inputState">Localidad</label>
+            <select id="inputState" class="form-control">
+              <option selected>Elegir...</option>
+              <option>Ciudad</option>
+              <option>Godoy Cruz</option>
+              <option>Guaymallén</option>
+              <option>Las Heras</option>
+              <option>Lavalle</option>
+              <option>Maipú</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputState">Moneda</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-1">
+            <button type="button" class="btn btn-primary" style="margin-top: 30px;">Buscar</button>
+          </div> 
+        </div>
+    </form>
+   </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="propiedades">
+      <h2>Lista de propiedades</h2>
+        <div class="listaPropiedades row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col mb-4" *ngFor="">
+            <a [routerLink]="['/detalle-propiedad', propiedad._id]">
+              <div class="propiedad card h-100">
+                <img src="" class="card-img-top img-fluid" alt="" style="height: 70%;">
+                <div class="card-body">
+                  <h5 class="card-title">{{propiedad.nombre}}</h5>
+                  <p class="card-text"> {{propiedad.precio + " ARS"}} </p>
+                </div>
+              </div></a>
+          </div>
+        </div>
+    </div>
+  </div>
