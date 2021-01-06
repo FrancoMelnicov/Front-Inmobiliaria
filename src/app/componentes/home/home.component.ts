@@ -11,6 +11,7 @@ import { Global} from '../../servicios/global';
 })
 export class HomeComponent implements OnInit {
   public propiedades: Propiedad[];
+  public propiedadesFiltradas: Propiedad[];
   public url: string;
   
   constructor(
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
     this.url = Global.url;
   }
 
+  //se inicia el componente cargando esas funciones
   ngOnInit(){
     this.getPropiedades();
   }
@@ -28,6 +30,38 @@ export class HomeComponent implements OnInit {
       response => {
         if(response.propiedades) {
           this.propiedades = response.propiedades;
+        }
+      },
+      error => {
+        console.log(<any>error);
+      }
+    );
+  }
+
+  getPropiedadesFiltradas(){
+    this._servicioPropiedad.getPropiedades().subscribe(
+      response => {
+        //recibe el array de objetos y los pasa al array propiedades
+        if(response.propiedades) {
+          this.propiedades = response.propiedades;
+
+          if("La propiedad categoria" != null){
+            this.propiedadesFiltradas = this.propiedades.filter(function(propiedad){
+              return propiedad.categoria === 'La propiedad categoria';
+            });
+          }
+
+          if("La propiedad localidad" != null){
+            this.propiedadesFiltradas = this.propiedades.filter(function(propiedad){
+              return propiedad.localidad === 'La propiedad localidad';
+            });
+          }
+
+          if("La propiedad moneda" != null){
+            this.propiedadesFiltradas = this.propiedades.filter(function(propiedad){
+              return propiedad.moneda === 'La propiedad moneda';
+            });
+          }
         }
       },
       error => {

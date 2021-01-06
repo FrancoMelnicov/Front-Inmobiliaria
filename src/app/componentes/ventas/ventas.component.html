@@ -37,10 +37,11 @@
   <div class="propiedades">
     <h2>Lista de propiedades</h2>
       <div class="listaPropiedades row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        <div class="col mb-4" *ngFor="">
+        <div class="col mb-4" *ngFor="let propiedad of propiedadesFiltradas">
           <a [routerLink]="['/detalle-propiedad', propiedad._id]">
             <div class="propiedad card h-100">
-              <img src="" class="card-img-top img-fluid" alt="" style="height: 70%;">
+              <h5 class="card-title">{{propiedad.categoria}}</h5>
+              <img src="{{url + 'getImagen/' + propiedad.imagen}}" class="card-img-top img-fluid" alt="{{propiedad.nombre}}" style="height: 70%;">
               <div class="card-body">
                 <h5 class="card-title">{{propiedad.nombre}}</h5>
                 <p class="card-text"> {{propiedad.precio + " ARS"}} </p>
