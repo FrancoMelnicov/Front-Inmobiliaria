@@ -30,7 +30,7 @@ export class VentasComponent implements OnInit {
         if(response.propiedades) {
           this.propiedades = response.propiedades;
           this.propiedadesFiltradas = this.propiedades.filter(function(propiedad){
-            return propiedad.categoria === 'Venta';
+            return propiedad.categoria === 'VENTA';
           });
         }
       },

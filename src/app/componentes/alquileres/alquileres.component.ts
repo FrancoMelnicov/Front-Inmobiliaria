@@ -31,7 +31,7 @@ export class AlquileresComponent implements OnInit {
         if(response.propiedades) {
           this.propiedades = response.propiedades;
           this.propiedadesFiltradas = this.propiedades.filter(function(propiedad){
-            return propiedad.categoria === 'Alquiler';
+            return propiedad.categoria === 'ALQUILER';
           });
         }
       },
